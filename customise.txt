@@ -1,0 +1,98 @@
+--==[ Kali Linux XFCE ]==--
+# Desktop #
+- Right Click => Desktop Settings
+- Uncheck Default Icons
+
+# Install Flat Remix Dark Icon
+- https://www.xfce-look.org/p/1012430/
+- Go to settings => appearance
+
+- Right Click on panel => panel => Panel preferences
+- Unlock panel and get down then lock
+- => Appearance change background to #111111 solid color and enable dark mode
+- change clock time format
+
+- Open Terminal And copy the logo to ~/.face
+
+
+- Right Click On Applications => Properties
+- => Appearance and change icon to anonymous logo
+
+- Go to Settings => LighDM GTK+ => Appearance
+- Theme: Kali-Dark
+- Icons: Flat-Remix-Blue-Dark
+# Copy lockscreen image and logo to / before add it!
+- Change Image & User Image
+=> Window Position
+H: 20
+V: 75
+
+
+# Terminal #
+- Preferences => Appearance
+    - Color scheme: GreenOnBlack
+    - Scrollbar position: No scrollbar
+    - Uncheck Show the menu bar
+    - Checked Fixed tab width: 500px
+    - Application transparency: 10%
+              => Behavior
+    - Uncheck Save Size when closing
+    - 1100px 600px
+# Install Oh My Zsh (https://ohmyz.sh/) 
+# user & root
+- sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# Change theme
+(user & root)
+- nano ~/.zshrc
+- ZSH_THEME="arrow"
+# Add Your Logo in the bottom
+- figlet "#--==[ Ghost Security ]==--#" -f digital -c -w 118
+# Adding Auto Complete
+- git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+- git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+- git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+- git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
+# Enable Auto Plugins
+- sudo nano ~/.zshrc
+* Find plugins=(git)
+- plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
+
+# darkblood
+# afowler
+# cypher
+    
+# Cursor #
+- https://www.gnome-look.org/p/1914825/
+- Extra Bibata and move to /usr/share/icons
+- Go to settings => Mouse and Touchpad => Theme and select it
+
+# Anonymous Grub Picture #
+- sudo cp -r desktop-grub.png /usr/share/images/desktop-base/desktop-grub.png
+- sudo cp -r grub-16x9.png /boot/grub/themes/kali/grub-16x9.png
+- sudo cp -r grub-4x3.png /boot/grub/themes/kali/grub-4x3.png
+- sudo update-grub
+- sudo update-grub2
+
+# Anonymous Mask Boot Loading #
+- unzip mask.zip
+- sudo mv mask/ /usr/share/plymouth/themes/
+- sudo plymouth-set-default-theme mask -R
+- sudo nano /usr/share/plymouth/plymouthd.defaults & Set theme mask
+- sudo update-initramfs -u
+- sudo update-grub2
+
+#############
+# Follow US #
+#############
+
+[ Telegram ]
+- https://t.me/GT0Day
+
+[ Youtube ]
+- https://www.youtube.com/@GT0day
+
+[ Blogger ]
+- https://gt0day.blogspot.com/
+
+[ Github ]
+- https://github.com/GT0Day
