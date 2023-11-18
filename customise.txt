@@ -13,15 +13,16 @@
 - change clock time format
 
 - Open Terminal And copy the logo to ~/.face
-
-
+- cp -r logo.png ~/.face 
+- Copy the logo to /usr/share/icons with sudo
+- sudo cp -r logo.png /usr/share/icons
 - Right Click On Applications => Properties
 - => Appearance and change icon to anonymous logo
 
 - Go to Settings => LighDM GTK+ => Appearance
 - Theme: Kali-Dark
 - Icons: Flat-Remix-Blue-Dark
-# Copy lockscreen image and logo to / before add it!
+# Copy lockscreen image and logo to "sudo cp -r lock-screen.jpg /usr/share/images/desktop-base/"  before add it!
 - Change Image & User Image
 => Window Position
 H: 20
