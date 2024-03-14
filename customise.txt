@@ -3,26 +3,31 @@
 - Right Click => Desktop Settings
 - Uncheck Default Icons
 
-# Install Flat Remix Dark Icon
+# Install Flat Remix Dark Icon ( Apply with root account )
 - https://www.xfce-look.org/p/1012430/
-- Go to settings => appearance
+- Go to settings => appearance => add then select it
+
+# Install Bibata Cursor ( Apply with root account )
+- https://www.gnome-look.org/p/1914825/
+- Go to settings => appearance => add then select it
 
 - Right Click on panel => panel => Panel preferences
 - Unlock panel and get down then lock
 - => Appearance change background to #111111 solid color and enable dark mode
 - change clock time format
 
-- Open Terminal And copy the logo to ~/.face
-
-
-- Right Click On Applications => Properties
+# Open Terminal And copy the logo to ~/.face
+- cp -r logo.png ~/.face
+# Copy the logo to /usr/share/icons with sudo
+- sudo cp -r logo.png /usr/share/icons
+- Right Click On Applications => Properties 
 - => Appearance and change icon to anonymous logo
 
 - Go to Settings => LighDM GTK+ => Appearance
 - Theme: Kali-Dark
 - Icons: Flat-Remix-Blue-Dark
-# Copy lockscreen image and logo to / before add it!
-- Change Image & User Image
+# Copy lockscreen image to "sudo cp -r lock-screen.jpg /usr/share/images/desktop-base/"  before add it!
+- Change Image & User Image (/usr/share/icons)
 => Window Position
 H: 20
 V: 75
@@ -60,11 +65,6 @@ V: 75
 # darkblood
 # afowler
 # cypher
-    
-# Cursor #
-- https://www.gnome-look.org/p/1914825/
-- Extra Bibata and move to /usr/share/icons
-- Go to settings => Mouse and Touchpad => Theme and select it
 
 # Anonymous Grub Picture #
 - sudo cp -r desktop-grub.png /usr/share/images/desktop-base/desktop-grub.png
@@ -90,9 +90,6 @@ V: 75
 
 [ Youtube ]
 - https://www.youtube.com/@GT0day
-
-[ Blogger ]
-- https://gt0day.blogspot.com/
 
 [ Github ]
 - https://github.com/GT0Day
