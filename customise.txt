@@ -42,7 +42,7 @@ V: 75
     - Application transparency: 10%
               => Behavior
     - Uncheck Save Size when closing
-    - 1100px 600px
+    - 1100px 600px | 136C & 33R
 # Install Oh My Zsh (https://ohmyz.sh/) 
 # user & root
 - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -51,7 +51,7 @@ V: 75
 - nano ~/.zshrc
 - ZSH_THEME="arrow"
 # Add Your Logo in the bottom
-- figlet "#--==[ Ghost Security ]==--#" -f digital -c -w 118
+- figlet "#--==[ Ghost Security ]==--#" -f digital -c -w 132
 # Adding Auto Complete
 - git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
